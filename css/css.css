@@ -1,0 +1,136 @@
+
+    .Geral {
+      height: 120px;
+    }
+    #btnimprimir   {
+  text-align: center;
+}
+.containerrr {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.item-1 {
+  background-color: #FAC300;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  animation: item-1_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-2 {
+  background-color: #0A4038;
+  top: 0;
+  right: 0;
+  animation: item-2_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-3 {
+  background-color: #00D9A3;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  animation: item-3_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.item-4 {
+  background-color: #0FFF77;
+  bottom: 0;
+  
+  left: 0;
+  animation: item-4_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+#circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+width: 150px;
+  height: 150px;	
+}
+
+.loader {
+  width: calc(100% - 0px);
+height: calc(100% - 0px);
+border: 8px solid #162534;
+border-top: 8px solid #09f;
+border-radius: 50%;
+animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+100% {transform: rotate(360deg);}
+} 
+  
+    #logo {
+      margin-left: auto;
+      margin-right: auto ;
+      width: 500px;
+      height: 120px;
+      cursor: pointer;
+      cursor: hand;
+      background-repeat: no-repeat;
+    }
+    .relative2 {
+      position: absolute;
+      
+      left: 700px;
+      
+      
+    }
+  
+    .relative3 {
+      position: relative;
+      right: 50%;
+      left: 50%;
+      
+      
+      
+    }
+    .relative {
+      margin: 0;
+      position: relative;
+      left: 40%;
+    }
+
+    #superior {
+      float: left;
+      width: 1005px;
+      height: 60px;
+    }
+
+    #inferior {
+      float: left;
+      width: 1005px;
+      height: 60px;
+
+    }
+
+    #tabela {
+
+      margin: 0 auto;
+      width: 800px;
+    }
+
+
+    #mes {
+
+      width: 124px;
+      margin: auto;
+      text-align: center;
+      /* para firefox */
+      text-align-last: center;
+      /* para chrome */
+    }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link href="img/logo.png" rel="icon">
+
+<head>
+  <title>Nome da Empresa</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <link rel="stylesheet" href="css/css/imports-stylesheet.css">
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.rawgit.com/MrRio/jsPDF/master/dist/jspdf.min.js"></script>
+  <script type="text/javascript" src="//cdn.rawgit.com/niklasvh/html2canvas/0.5.0-alpha2/dist/html2canvas.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body id="nodeToRenderAsPDF">
+
+
+  <div align="center">
+    <img src="img/logo.png" class="rounded" alt="...">
+  </div>
+  <div id="rodap">
+    <h5 align="center">Nome fantasia da empresa</h5>
+    <h5 align="center">Endereço da empresa - Franca-SP</h5>
+    <h5 align="center">CNPJ - 9999999999999</h5>
+  </div>
+  <div>
+    <h5 align="center">
+      <p></p>
+      <a id="nome1"></a>
+      <a id="cargo1"></a>
+      <P></P>
+      <a id="mesSelect"></a>
+      <a id="ano1"></a>
+    </h5>
+  </div>
+  <section id="cover">
+    <div id="cover-caption">
+      <div id="cadastro" class="container">
+        <div class="row text-white">
+          <div class="col-sm-10 offset-sm-1 text-center">
+            <div class="info-form">
+              <form action="" class="form-inline justify-content-center">
+                <div class="form-group">
+                  <select id="nome2" class="custom-select mr-sm-6">
+                    <option>Selecione nome</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="cargo2" placeholder="Cargo*">
+                </div>
+                <div class="form-group">
+                  <select value="selects" id="mes" class="custom-select mr-sm-6">
+                    <option value="mes">Mês</option>
+                    <option value="0">Janeiro</option>
+                    <option value="1">Fevereiro</option>
+                    <option value="2">Março</option>
+                    <option value="3">Abril</option>
+                    <option value="4">Maio</option>
+                    <option value="5">Junho</option>
+                    <option value="6">Julho</option>
+                    <option value="7">Agosto</option>
+                    <option value="8">Setembro</option>
+                    <option value="9">Outubro</option>
+                    <option value="10">Novembro</option>
+                    <option value="11">Dezembro</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="ano2" placeholder="Ano*" 2018>
+                </div>
+                <button type="button" id="btntabela" disabled="disabled" onclick="ponth()" class="btn btn-outline-primary">Gerar</button><br>
+              </form>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cover">
+    <div id="cover-caption">
+      <div id="cadastro" class="container">
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1 text-center">
+            <table border="2" id="tabela" class="table-striped">
+              <thead id="thead">
+                <tr height="29px">
+                  <th scope="col">DIA</th>
+                  <th scope="col">Entrada</th>
+                  <th scope="col">Saída Almoço</th>
+                  <th scope="col">Volta Almoço</th>
+                  <th scope="col">Saída</th>
+                  <th scope="col">Horas Trabahadas</th>
+                  <th scope="col">Feriados</th>
+                </tr>
+              <tbody id="tbody">
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="linha">
+          <div class="text-center">
+            <label id="dataAssinatura"></label>
+          </div>
+          <div class="text-center"><br><br>
+          </div>
+          <div class="text-center">
+            <h5 id="assinatura"></h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1 text-center">
+            <button type="button" disabled="disabled" id="btnimprimir" onclick="imprimir()" class="btn btn-outline-primary">Imprimir</button>
+            <button type="button" id="btnVoltar" onclick="location.reload()" class="btn btn-outline-primary">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script language="javascript" type="text/javascript"></script>
+
+</body>
+
+<script type="text/javascript" src="js/function-ponto.js"></script>
+
+</html>
