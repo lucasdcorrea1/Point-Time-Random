@@ -103,7 +103,7 @@ function foo(select) {
   var mensagem = "<td>Feriado</td>";
   console.log(select.closest("tr td select").value)
   if (select.value.toLowerCase() == "vazio") mensagem = "<td>---</td>";
-
+  if (select.value.toLowerCase() == "Não") mensagem = "<td>ttt</td>";
   for (var i = 0; i < SelectFeriado.length; i++) {
     if (i > 0 && i < 6) {
       SelectFeriado[i].innerHTML = mensagem;
@@ -245,7 +245,7 @@ function ponth() {
       dataValida +
       "</td>" +
       "<td><select onchange=foo(this) id'status'>" +
-      "<option values='0'>Nao</option>" +
+      "<option values='0'>Não</option>" +
       "<option values='1'>Sim</option>" +
       "<option values='2'>Vazio</option>" +
       "</td>" +

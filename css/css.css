@@ -21,7 +21,15 @@
   height: 100px;
   position: absolute;
 }
-
+.body {
+  font-family: Maven Pro;
+}
+#rodap{
+  font-family: Maven Pro;
+}
+#cover{
+  font-family: Maven Pro;
+}
 .item-1 {
   background-color: #FAC300;
   top: 0;
@@ -119,14 +127,22 @@ animation: rotate 5s linear infinite;
     }
 
     #tabela {
-
+      font-family: Maven Pro;
       margin: 0 auto;
       width: 800px;
     }
-
+.a {
+  font-family: Maven Pro;
+}
+.p{
+  font-family: Maven Pro;
+}
+.h1{
+  font-family: Maven Pro;
+}
 
     #mes {
-
+      font-family: Maven Pro;
       width: 124px;
       margin: auto;
       text-align: center;
